@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f7e9ef">
+<title>For Smita — I'm Sorry 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+:root{
+  --ink:#3f3040; --muted:#756574; --rose:#c97994; --rose2:#e9a9bc;
+  --cream:#fffaf7; --lav:#eee7f5; --gold:#c8a46a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); background:
+  radial-gradient(circle at 15% 10%, #f7dce6 0 7%, transparent 24%),
+  radial-gradient(circle at 90% 15%, #e9e2f4 0 8%, transparent 26%),
+  linear-gradient(135deg,#fffaf7,#f9f0f4 48%,#f2edf8);
+  font-family:"DM Sans",system-ui,sans-serif; overflow-x:hidden;
+}
+body:before{
+  content:""; position:fixed; inset:0; pointer-events:none; opacity:.28;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:22px 22px; mask-image:linear-gradient(to bottom,black,transparent 80%);
+}
+.wrap{max-width:760px;margin:auto;padding:20px}
+section{min-height:100svh;display:grid;place-items:center;padding:42px 0;position:relative}
+.card{
+  width:min(100%,650px); border:1px solid rgba(255,255,255,.8);
+  background:rgba(255,250,247,.72); backdrop-filter:blur(18px);
+  border-radius:32px; box-shadow:0 24px 80px rgba(82,50,75,.13);
+  padding:34px 25px; text-align:center;
+}
+.kicker{letter-spacing:.2em;text-transform:uppercase;font-size:11px;color:var(--rose);font-weight:600}
+h1,h2{font-family:"Cormorant Garamond",serif;margin:10px 0}
+h1{font-size:clamp(58px,15vw,100px);line-height:.82;font-weight:600}
+h2{font-size:clamp(40px,10vw,64px);line-height:.95}
+p{font-size:16px;line-height:1.8;color:var(--muted)}
+.small{font-size:13px}
+.heart{
+  width:76px;height:76px;margin:0 auto 20px;position:relative;transform:rotate(-45deg);
+  background:linear-gradient(135deg,#d989a2,#b96281);border-radius:12px;
+  animation:pulse 1.9s infinite ease-in-out; box-shadow:0 14px 35px rgba(185,98,129,.28)
+}
+.heart:before,.heart:after{content:"";position:absolute;width:76px;height:76px;background:inherit;border-radius:50%}
+.heart:before{top:-38px;left:0}.heart:after{left:38px;top:0}
+@keyframes pulse{50%{transform:rotate(-45deg) scale(1.08)}}
+.btn{
+  border:0;border-radius:999px;padding:15px 22px;font:600 14px "DM Sans";
+  color:white;background:linear-gradient(135deg,#c97994,#a95c7c);
+  box-shadow:0 12px 28px rgba(169,92,124,.25);cursor:pointer;
+  transition:.25s transform,.25s box-shadow
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(169,92,124,.3)}
+.ghost{background:rgba(255,255,255,.65);color:var(--ink);border:1px solid #eadce4;box-shadow:none}
+.scroll{position:absolute;bottom:24px;font-size:12px;color:#907d8b;letter-spacing:.08em}
+.float{position:fixed;bottom:-30px;font-size:18px;opacity:0;animation:float 8s linear infinite;pointer-events:none;z-index:4}
+@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}12%{opacity:.55}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+.letter{
+  text-align:left; padding:24px; border-radius:24px; background:rgba(255,255,255,.55);
+  border:1px solid rgba(255,255,255,.85); margin-top:20px
+}
+.letter p{margin:0 0 14px}
+.signature{font-family:"Cormorant Garamond";font-size:34px;color:#9c5e77}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#dec4cf,transparent);margin:26px 0}
+.reasons{display:grid;gap:10px;margin-top:18px}
+.reason{padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.55);border:1px solid #f0e2e8;text-align:left}
+.reason b{color:#a95c7c}
+.final h2{font-size:clamp(48px,12vw,76px)}
+#secret{display:none;margin-top:18px}
+.sparkle{position:absolute;width:4px;height:4px;border-radius:50%;background:white;box-shadow:0 0 12px 3px #fff;animation:twinkle 2.4s infinite alternate}
+@keyframes twinkle{to{opacity:.15;transform:scale(.5)}}
+</style>
+</head>
+<body>
+
+<div class="float" style="left:7%;animation-delay:0s">♡</div>
+<div class="float" style="left:24%;animation-delay:2.2s">✦</div>
+<div class="float" style="left:47%;animation-delay:4.1s">♡</div>
+<div class="float" style="left:72%;animation-delay:1.4s">✧</div>
+<div class="float" style="left:88%;animation-delay:5.2s">♡</div>
+
+<main class="wrap">
+<section>
+  <i class="sparkle" style="top:19%;left:18%"></i>
+  <i class="sparkle" style="top:28%;right:13%;animation-delay:.8s"></i>
+  <div class="card">
+    <div class="heart"></div>
+    <div class="kicker">A little page from Adii</div>
+    <h1>For Smita</h1>
+    <p>There is something I really need to say.</p>
+    <button class="btn" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">Open my heart ♡</button>
+  </div>
+  <div class="scroll">scroll gently ↓</div>
+</section>
+
+<section id="letter">
+  <div class="card">
+    <div class="kicker">I mean every word</div>
+    <h2>I'm sorry.</h2>
+    <div class="letter">
+      <p>Smita,</p>
+      <p>I'm sorry for everything — and especially for not understanding your side the way I should have.</p>
+      <p>I'm sorry for being so stupid sometimes. I know saying “sorry” can't magically fix everything, but I want you to know that I genuinely regret the moments where I made things harder instead of making them better.</p>
+      <p>And I'm really sorry that I can't help you when you're in pain. I wish I could take even a little of it away, or simply know exactly what you need from me. Even when I don't know how to help, I care. More than I probably manage to show.</p>
+      <p>I don't expect one little webpage to make everything okay. I just wanted to make something that says what I sometimes fail to say properly:</p>
+      <p><strong>I'm sorry. I care about you. And I want to understand your side better.</strong></p>
+      <p>— Adii</p>
+      <div class="signature">with a very sorry heart ♡</div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="reasons">
+      <div class="reason">🌷 <b>I'm listening.</b> I want to understand, not just respond.</div>
+      <div class="reason">🫶 <b>I'm learning.</b> I know I don't always get it right.</div>
+      <div class="reason">🌙 <b>I'm here.</b> Even when I don't have the perfect words.</div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="card">
+    <div class="kicker">One last thing</div>
+    <h2>Can we start with a little forgiveness?</h2>
+    <p>I know I can't ask you to forget everything. I can only say that I'm genuinely sorry and that I want to do better.</p>
+    <button class="btn" onclick="forgive()">Forgive me please🥺💗</button>
+    <div id="secret">
+      <div class="divider"></div>
+      <h2 style="font-size:48px">Thank you. ♡</h2>
+      <p>Whatever your answer is, thank you for hearing me out.</p>
+      <p class="small">— Adii</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+function forgive(){
+  document.getElementById('secret').style.display='block';
+  for(let i=0;i<18;i++){
+    setTimeout(()=>{
+      const s=document.createElement('div'); s.className='float';
+      s.textContent=['♡','💗','✦','🌸'][Math.floor(Math.random()*4)];
+      s.style.left=(10+Math.random()*80)+'%';
+      s.style.animationDuration=(4+Math.random()*4)+'s';
+      document.body.appendChild(s);
+      setTimeout(()=>s.remove(),8000);
+    },i*90);
+  }
+}
+
+const bgMusic=document.getElementById('bgMusic');
+const musicBtn=document.getElementById('musicBtn');
+async function startMusic(){
+  try { await bgMusic.play(); musicBtn.textContent='Pause music ♫'; }
+  catch(e){ musicBtn.textContent='Tap to play music ♫'; }
+}
+function toggleMusic(){
+  if(bgMusic.paused){ startMusic(); } else { bgMusic.pause(); musicBtn.textContent='Play music ♫'; }
+}
+window.addEventListener('load',()=>setTimeout(startMusic,250));
+['click','touchstart'].forEach(ev=>document.addEventListener(ev,()=>{if(bgMusic.paused) startMusic();},{once:true}));
+</script>
+</body>
+</html>
